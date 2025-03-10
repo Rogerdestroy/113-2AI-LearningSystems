@@ -1,0 +1,29 @@
+python -m venv venv
+.\venv\Scripts\activate
+
+https://github.com/microsoft/autogen
+
+pip install -U autogen-agentchat autogen-ext[openai,web-surfer] python-dotenv
+pip install autogen-agentchat python-dotenv playwright
+playwright install
+
+pip install -U autogenstudio
+autogenstudio ui --port 8080 --appdir ./my-app
+http://localhost:8080
+
+ File "C:\Users\Roge\...\venv\Lib\site-packages\autogen_ext\agents\web_surfer\playwright_controller.py", line 71, in __init__
+''' # Read page_script
+        with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), "page_script.js"), "rt",encoding="utf-8") as fh:
+            self._page_script = fh.read()
+
+Python 3.10 或更新版本
+pip
+安裝以下 Python 套件：
+python-dotenv
+autogen-agentchat
+autogen-ext[openai]
+playwright (multiAgent.py 中用於 WebSurfer)
+並執行以下命令下載瀏覽器二進位檔：
+
+
+離開指令：exit
